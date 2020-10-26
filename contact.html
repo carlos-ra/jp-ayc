@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contacto</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/skin.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase.js"></script>
+    <script src="./script/index.js"></script>
+</head>
+
+<body id="wrapper">
+
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                        <a style="color: #022c5c" class="navbar-brand" href="#">
+                            <h1 class="titHeadFont" style="color: #022c5c">JP ADVISOR</h1><span>& CONSULTANTS SAS</span></a>
+                    </div>
+                    <div id="navbar" class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a style="color: #022c5c" href="index.html">Inicio</a></li>
+                        <li><a style="color: #022c5c" href="index.html#nosotrosSection">Nosotros</a></li>
+                        <li class="active"><a style="color: #022c5c" href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <section id="top_banner">
+        <div class="banner">
+            <div style="width: 60%; margin-left: 20%;margin-right: 20%;border-bottom: 3px solid #022c5c;" class="inner text-center">
+                <h2 style="font-size: 43px;color: #022c5c">CONTACTANOS</h2>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <section id="contact-page">
+        <div class="container">
+            <div class="row contact-wrap">
+                <div class="status alert alert-success" style="display: none"></div>
+                <form id="main-contact-form" class="contact-form" name="contact-form">
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="form-group">
+                            <label>Nombre</label>
+                            <input id="name" type="text" name="name" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Correo</label>
+                            <input id="mail" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Teléfono</label>
+                            <input id="phone" type="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Nombre de la Compañía</label>
+                            <input id="company" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Servicio de interés</label>
+                            <input id="service" type="text" name="subject" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Mensaje</label>
+                            <textarea name="message" id="message" required="required" class="form-control" rows="8"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button style="background: #022c5c" class="btn btn-default submit-button" onclick="sendContact()">Enviar <i class="fa fa-caret-right"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Dirección</h4>
+                        <hr/>
+                        <div>Calle 135C #10A - 35
+                        </div>
+                        <div>Oficina 304
+                        </div>
+                        <h4>Teléfonos</h4>
+                        <hr/>
+                        <div>(+57) 320 307 3492
+                        </div>
+                        <div>(+57) 310 257 1988
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Enlaces</h4>
+                        <hr/>
+                        <ul class="footer-links">
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#nosotrosSection">Nosotros</a></li>
+                            <li><a href="contact.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+</body>
+
+</html>
